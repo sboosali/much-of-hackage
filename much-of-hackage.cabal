@@ -1,0 +1,26 @@
+name:                much-of-hackage 
+version:             0.0.0
+synopsis:            (a dummy package with a long list of dependencies that I've used)
+license:             BSD3
+license-file:        LICENSE
+author:              Spiros Boosalis
+maintainer:          samboosalis@gmail.com
+copyright:           2017 Spiros Boosalis
+build-type:          Simple
+cabal-version:       >=2.0
+
+extra-source-files:
+  README.md
+  stack.yaml
+
+source-repository head
+  type:     git
+  location: https://github.com/sboosali/much-of-hackage 
+
+library
+ hs-source-dirs:      .
+ default-language:    Haskell2010
+ build-depends:
+               base >=4.9
+             , spiros
+             , enumerate-function
